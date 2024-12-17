@@ -28,7 +28,7 @@ cd symfony-codespaces
 
 3. Setup a symfony project
 ```
-symfony new my_project --version="6.3.*" --webapp
+symfony new symfony --webapp
 ```
 
 4. Install the project dependencies using Composer:
@@ -38,7 +38,7 @@ composer install
 
 5. Start the Symfony development server:
 ```bash
-symfony server:start
+symfony serve
 ```
 
 6. Open your web browser and visit http://localhost:8000 to see the Symfony application running.
@@ -56,9 +56,9 @@ This repository is pre-configured to work with CodeSpaces, allowing you to easil
 
 5. Example setup in the CodeSpaces
 ```
-symfony new my_project --version="6.3.*" --webapp
+symfony new symfony --webapp
 ```
-Then `cd new_project` and `symfony server:start` - now you can access you symfony instance and start developing.
+Then `cd symfony` and `symfony serve` - now you can access you symfony instance and start developing.
 
 ### CodeSpaces Profiler
 To display the symfony profiler (very useful), in your symfony project, go to `config/packages/framework.yaml` and add the following under `framework`:
@@ -77,12 +77,12 @@ php bin/phpunit
 
 2. Generate the database schema (if using Doctrine):
 ```bash
-php bin/console doctrine:schema:create
+symfony console doctrine:schema:create
 ```
 
 3. Clear the cache:
 ```bash
-php bin/console cache:clear
+symfony console cache:clear
 ```
 
 For more information about Symfony and its commands, refer to the [Symfony documentation](https://symfony.com/doc/current/index.html).
