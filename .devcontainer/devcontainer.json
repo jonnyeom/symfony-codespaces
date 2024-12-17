@@ -5,8 +5,6 @@
     "extensions": [
 		"mblode.twig-language-2",
 		"bmewburn.vscode-intelephense-client",
-		"yahyaahmad.drupal-intellisense",
-		"andrewdavidblum.drupal-smart-snippets",
 		"coenraads.bracket-pair-colorizer",
 		"neilbrayfield.php-docblocker",
 		"editorconfig.editorconfig",
